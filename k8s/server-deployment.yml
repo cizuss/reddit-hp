@@ -26,7 +26,7 @@ spec:
                 name: senderpassword
                 key: SENDERPASSWORD
           - name: RECEIVER_EMAIL
-            value: "liviu.gheorghe.ro@gmail.com"
+            value: "claudiu.cismaru94@gmail.com"
           - name: REDDIT_CLIENT_ID
             value: "FuQv1qpqmusTRw"
           - name: REDDIT_REDIRECT_URI

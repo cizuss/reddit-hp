@@ -4,7 +4,8 @@ services:
 env:
   global:
   # Do not prompt for user input when using any SDK methods.
-    - CLOUDSDK_CORE_DISABLE_PROMPTS=1 
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+    - SHA=$(git rev-parse HEAD)
 cache:
   directories:
   # We cache the SDK so we don't have to download it again on subsequent builds.
@@ -23,3 +24,7 @@ before_install:
 
 script:
   - docker run cizuss/reddit-hp-test mvn test
+
+deploy:
+  provider: script
+  script: bash ./deploy.sh
