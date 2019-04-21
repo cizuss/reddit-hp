@@ -11,14 +11,10 @@ import org.springframework.stereotype.Service;
 import reddithottestposts.entities.UserRedditPost;
 import reddithottestposts.repos.UserRedditPostRepository;
 
-import javax.mail.*;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.Properties;
 
 @Service
 public class EmailService {
@@ -29,8 +25,6 @@ public class EmailService {
     private UserRedditPostRepository userRedditPostRepository;
 
     private final Config config = ConfigFactory.load();
-    private final String senderEmail = config.getString("sender-email");
-    private final String senderPassword = config.getString("sender-password");
     private final String sendgridApyKey = config.getString("sendgrid-api-key");
 
     private final SendGrid sg = new SendGrid(sendgridApyKey);
@@ -63,24 +57,6 @@ public class EmailService {
         return sb.toString();
 
     }
-    private Properties setProps() {
-        final String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
-        // Get a Properties object
-        Properties props = System.getProperties();
-
-        props.setProperty("mail.smtp.host", "smtp.gmail.com");
-        props.setProperty("mail.smtp.socketFactory.class", SSL_FACTORY);
-        props.setProperty("mail.smtp.socketFactory.fallback", "false");
-        props.setProperty("mail.smtp.port", "465");
-        props.setProperty("mail.smtp.socketFactory.port", "465");
-
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.debug", "true");
-        props.put("mail.store.protocol", "pop3");
-        props.put("mail.transport.protocol", "smtp");
-
-        return props;
-    }
 
     private void sendEmail(String subject, String body, String recipient) {
         System.out.println("Sending email with SENDGRID");
@@ -106,37 +82,6 @@ public class EmailService {
     }
 
     public void sendEmailWithSubmission(Submission submission, String recipient) {
-        Properties props = setProps();
-
-//        try {
-//            Session session = Session.getDefaultInstance(props,
-//                    new Authenticator(){
-//                        protected PasswordAuthentication getPasswordAuthentication() {
-//                            return new PasswordAuthentication(senderEmail, senderPassword);
-//                        }});
-//
-//            // -- Create a new message --
-//            Message msg = new MimeMessage(session);
-//
-//            // -- Set the FROM and TO fields --
-//            msg.setFrom(new InternetAddress(senderEmail));
-//            msg.setRecipients(Message.RecipientType.TO,
-//                    InternetAddress.parse(recipient,false));
-//            msg.setSubject("Check out this awesome reddit post!");
-//
-//            String text = getEmailBody(submission);
-//
-//            msg.setContent(text, "text/html");
-//            msg.setSentDate(new Date());
-//
-//            Transport.send(msg);
-//
-//            System.out.println("Message sent.");
-//        } catch (MessagingException e)
-//        {
-//            System.out.println("Error, cause: " + e);
-//        }
-
         String body = getEmailBody(submission);
         String subject = "Here is a cool reddit post for you!";
 

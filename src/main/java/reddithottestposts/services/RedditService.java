@@ -47,12 +47,6 @@ public class RedditService {
     }
 
     private AppContext setupCtx() throws RedditOAuthException {
-//        // Information about the app
-//        String userAgent = "jReddit: Reddit API Wrapper for Java";
-//        String clientID = "FuQv1qpqmusTRw";
-//        String redirectURI = "http://www.google.com";
-//        String secret = "H9M1zJz9ek3YXksw0z7SEshcEBA";
-
         RedditApp redditApp = new RedditScriptApp(clientID, secret, redirectURI);
         RedditOAuthAgent agent = new RedditOAuthAgent(userAgent, redditApp);
         RedditClient client = new RedditHttpClient(userAgent, HttpClientBuilder.create().build());
@@ -98,13 +92,13 @@ public class RedditService {
 
     public List<Submission> getHotPostsBySubreddit(String subreddit, int limit) throws RedditOAuthException, RedditParseException {
         AppContext ctx = setupCtx();
-// Create parser for request
+        // Create parser for request
         SubmissionsListingParser parser = new SubmissionsListingParser();
 
-// Create the request
+        // Create the request
         SubmissionsOfSubredditRequest request = (SubmissionsOfSubredditRequest) new SubmissionsOfSubredditRequest(subreddit, SubmissionSort.HOT).setLimit(limit);
 
-// Perform and parse request, and store parsed result
+        // Perform and parse request, and store parsed result
         List<Submission> submissions = parser.parse(ctx.client.get(ctx.token, request));
         return submissions;
     }
