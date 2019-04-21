@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: server
+  template:
+    metadata:
+      labels:
+        component: server
+    spec:
+      containers:
+        - image: cizuss/reddithp
+          name: server
+          ports:
+            - containerPort: 8080    
+          env:
+          - name: SENDER_EMAIL
+            value: "cizuss.cizuss@gmail.com"
+          - name: SENDER_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: senderpassword
+                key: SENDERPASSWORD
+          - name: RECEIVER_EMAIL
+            value: "liviu.gheorghe.ro@gmail.com"
+          - name: REDDIT_CLIENT_ID
+            value: "FuQv1qpqmusTRw"
+          - name: REDDIT_REDIRECT_URI
+            value: "http://www.google.com"
+          - name: REDDIT_SECRET
+            valueFrom:
+              secretKeyRef:
+                name: redditsecret
+                key: REDDITSECRET
+          - name: MYSQL_HOST
+            value: jdbc:mysql://mysql-cluster-ip-service:3306/db_example
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mysqlrootpassword
+                key: MYSQLROOTPASSWORD                     
