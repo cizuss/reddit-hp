@@ -25,12 +25,12 @@
 # # set the startup command to run your binary
 # CMD ["java", "-jar", "./app.jar]
 
-FROM maven:3.5-jdk-8
+FROM maven:3.5-jdk-8 as build
 COPY ./pom.xml ./pom.xml
 RUN mvn dependency:go-offline -B
 COPY . .
-RUN rm -rf target
 RUN mvn clean package
-VOLUME /tmp
-COPY target/gs-spring-boot-docker-0.1.0.jar app.jar
+
+FROM openjdk:8-jre-alpine
+COPY --from=build /target/gs-spring-boot-docker-0.1.0.jar app.jar
 CMD ["java","-jar","/app.jar"]
