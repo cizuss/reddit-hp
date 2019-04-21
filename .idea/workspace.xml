@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4da6bf6b-5059-4f9b-a38c-5c70832192c1" name="Default Changelist" comment="" />
+    <list default="true" id="4da6bf6b-5059-4f9b-a38c-5c70832192c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/RedditOAuthAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/RedditOAuthAgent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/services/EmailService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/reddithottestposts/services/EmailService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/services/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/reddithottestposts/services/EmailService.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -157,6 +163,9 @@
       <dir>$PROJECT_DIR$/src/main/java/com/github/jreddit/parser</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -227,6 +236,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -318,6 +328,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
