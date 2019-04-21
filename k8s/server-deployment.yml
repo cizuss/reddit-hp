@@ -42,4 +42,9 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: mysqlrootpassword
-                key: MYSQLROOTPASSWORD                     
+                key: MYSQLROOTPASSWORD
+          - name: SENDGRID_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: sendgridapikey
+                key: SENDGRIDAPIKEY
