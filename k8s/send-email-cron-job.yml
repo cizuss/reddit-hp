@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: send-email-job
 spec:
-  schedule: "*/10 * * * *"
+  schedule: "*/30 * * * *"
   concurrencyPolicy: Forbid
   successfulJobsHistoryLimit: 1
   failedJobsHistoryLimit: 1
