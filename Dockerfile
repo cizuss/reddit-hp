@@ -31,6 +31,6 @@ RUN mvn dependency:go-offline -B
 COPY . .
 RUN mvn clean package
 
-FROM openjdk:8-jre-alpine
+FROM maven:3.5-jdk-8
 COPY --from=build /target/gs-spring-boot-docker-0.1.0.jar app.jar
 CMD ["java","-jar","/app.jar"]
