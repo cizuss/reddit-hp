@@ -3,10 +3,101 @@
   <component name="ChangeListManager">
     <list default="true" id="4da6bf6b-5059-4f9b-a38c-5c70832192c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/send-email-cron-job.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/send-email-cron-job.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/RedditOAuthAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/RedditToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/app/RedditApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/app/RedditInstalledApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/app/RedditScriptApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/app/RedditWebApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/client/RedditClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/client/RedditHttpClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/client/RedditPoliteClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/exception/RedditOAuthException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/param/RedditDuration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/param/RedditScope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/param/RedditScopeBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/oauth/param/RedditTokenCompleteScope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/Kind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/More.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/Submission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/Subreddit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/Thing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/UserInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/imaginary/CommentTreeElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/imaginary/FullSubmission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/entity/imaginary/MixedListingElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/exception/RedditParseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/listing/CommentsListingParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/listing/CommentsMoreParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/listing/MixedListingParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/listing/RedditListingParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/listing/SubmissionsListingParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/listing/SubredditsListingParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/single/FullSubmissionParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/util/CommentTreeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/parser/util/JsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/RedditGetRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/RedditPostRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/MarkActionRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/flair/DeleteFlairRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/mark/HideRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/mark/MarkNsfwRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/mark/ReportRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/mark/SaveRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/mark/UnhideRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/mark/UnmarkNsfwRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/mark/UnsaveRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/action/mark/VoteRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/ListingRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/comments/CommentsOfUserRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/comments/MoreCommentsRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/mixed/FullSubmissionRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/mixed/MixedOfUserRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/param/CommentSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/param/QuerySyntax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/param/SearchSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/param/SubmissionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/param/SubredditsView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/param/TimeSpan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/param/UserMixedCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/param/UserOverviewSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/param/UserSubmissionsCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/submissions/SubmissionsOfSubredditRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/submissions/SubmissionsOfUserRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/submissions/SubmissionsSearchRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/subreddits/SubredditsOfUserRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/retrieval/subreddits/SubredditsSearchRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/jreddit/request/util/KeyValueFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/examples/ExampleAppOnlyToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/examples/ExampleCodeFlowToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/examples/ExampleContinuousRequests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/examples/ExampleImplicitGrantFlowToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/examples/ExampleRetrieveRequests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/examples/ExampleSimpleRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/examples/ExampleUserCodeFlowAuthorization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/examples/ExampleUserImplicitGrantFlowAuthorization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/examples/ExampleVotingRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/entities/UserRedditPost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/entities/UserRedditPostId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/repos/UserRedditPostRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/services/EmailService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/services/EmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/services/RedditService$AppContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reddithottestposts/services/RedditService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-spring-boot-docker-0.1.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-spring-boot-docker-0.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-spring-boot-docker-0.1.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,15 +112,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/reddithottestposts/services/RedditService.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,7 +145,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -87,13 +169,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/reddithottestposts/services/EmailService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+            <state relative-caret-position="810">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -154,6 +241,7 @@
       <find>5.</find>
       <find>claudiu</find>
       <find>println</find>
+      <find>envoi</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -218,8 +306,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/jreddit/oauth/RedditOAuthAgent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/reddithottestposts/services/EmailService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/reddithottestposts/services/EmailService.java" />
       </list>
     </option>
   </component>
@@ -751,16 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reddithottestposts/services/EmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -774,6 +852,19 @@
           <caret column="34" selection-start-column="34" selection-end-column="34" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reddithottestposts/services/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

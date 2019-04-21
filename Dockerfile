@@ -29,6 +29,7 @@ FROM maven:3.5-jdk-8
 COPY ./pom.xml ./pom.xml
 RUN mvn dependency:go-offline -B
 COPY . .
+RUN rm -rf target
 RUN mvn clean package
 VOLUME /tmp
 COPY target/gs-spring-boot-docker-0.1.0.jar app.jar
